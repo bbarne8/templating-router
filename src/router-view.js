@@ -125,9 +125,10 @@ export class RouterView {
 
   swap(viewPortInstruction) {
     let layoutInstruction = viewPortInstruction.layoutInstruction;
-
+    let previousView = this.view;
+    
     let work = () => {
-      let previousView = this.view;
+     
       let swapStrategy;
       let viewSlot = this.viewSlot;
 
